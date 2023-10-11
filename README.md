@@ -5,4 +5,9 @@
 - vite
 - preactjs
 
+Run by
+```
+bun run dev
+```
+
 ## Backend
