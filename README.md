@@ -7,6 +7,7 @@
 
 Run by
 ```
+bun install
 bun run dev
 ```
 
