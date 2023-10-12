@@ -69,7 +69,7 @@ export function Page() {
 
 function Question(props) {
 	return (
-		<div>
+		<div className="question">
 			<h2>{props.question.title}</h2>
 
 
