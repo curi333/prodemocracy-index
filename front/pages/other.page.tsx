@@ -9,6 +9,7 @@
 
 
 // import './style.css';
+let currentQuestionIndex=0
 
 export function Page() {
 
@@ -54,11 +55,13 @@ export function Page() {
 	return (
 		<div>
 			<section>
-				{questions.map(question => (
+					<Question question={questions[currentQuestionIndex]} />
+				{/* {questions.map(question => (
+					
 					<Question 
 						question={question}
 					/>
-				))}
+				))} */}
 			</section>
 		</div>
 	);
@@ -83,11 +86,20 @@ function Question(props) {
 					)
 				})}
 			</div>
+			<button onClick={() => next()}>
+				Submit
+
+			</button>
 		</div>
 
 	)
 }
 
+
+function next(){
+	currentQuestionIndex+=1;
+	console.log("currentQuestionIndex",currentQuestionIndex)
+}
 // function QuestionOption(props) {
 // 	return (
 // 		props.options.map(option => {
